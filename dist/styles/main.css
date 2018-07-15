@@ -367,6 +367,16 @@ ul li {
 }
 
 .services .container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-items: start;
+    padding: 100px 0 50px;
+    color: #7f7f7f;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.services .contain {
     width: 70%;
     margin: auto;
     display: grid;
