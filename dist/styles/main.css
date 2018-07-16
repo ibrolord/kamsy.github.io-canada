@@ -901,6 +901,19 @@ ul li {
         margin-left: 15%;
         list-style: none;
     }
+    #carouselExampleIndicators .forabout {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+    }
     .about .container .row {
         display: grid;
         grid-template-columns: 1fr;
