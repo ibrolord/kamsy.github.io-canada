@@ -38,12 +38,6 @@ ul li {
     margin: 0;
 }
 
-@media (max-width: 560px) {
-    .container {
-        padding: 0 15px;
-    }
-}
-
 .navbar {
     border-bottom: 1px solid #7f7f7f;
     max-width: 1200px;
@@ -64,12 +58,6 @@ ul li {
     -ms-flex-align: center;
     align-items: center;
     z-index: 3;
-}
-
-@media (max-width: 560px) {
-    .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.9);
-    }
 }
 
 .navbar-light .navbar-brand {
@@ -133,12 +121,6 @@ ul li {
     position: relative;
 }
 
-@media (max-width: 560px) {
-    .header {
-        height: 100vh;
-    }
-}
-
 .header-container {
     position: absolute;
     max-width: 1000px;
@@ -152,18 +134,11 @@ ul li {
 }
 
 .header-container header {
-    font-size: 2.5rem;
-}
-
-@media (min-width: 560px) {
-    .header-container header {
-        font-size: 5rem;
-        width: 100%;
-    }
+    font-size: 3.0rem;
 }
 
 .header-container h3 {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -184,12 +159,6 @@ ul li {
     background-color: #fff;
 }
 
-@media (max-width: 560px) {
-    .header-container {
-        padding: 0 15px;
-    }
-}
-
 .header .design {
     transform: translateY(150px);
 }
@@ -201,12 +170,6 @@ ul li {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     display: inline-block;
-}
-
-@media (max-width: 768px) {
-    .header .design li {
-        display: none;
-    }
 }
 
 .header .design .active-page {
@@ -239,6 +202,9 @@ ul li {
 .alt-header {
     height: 500px;
     background-image: url("http://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531603566/hero_image_3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 44% center;
 }
 
 .alt-header .design {
@@ -249,12 +215,6 @@ ul li {
     padding: 100px 0;
     color: #7f7f7f;
     border-bottom: 1px solid rgba(127, 127, 127, 0.2);
-}
-
-@media (max-width: 560px) {
-    .about .container {
-        padding: 50px 15px;
-    }
 }
 
 .about header {
@@ -305,12 +265,6 @@ ul li {
     transform: scale(1.2);
 }
 
-@media (max-width: 560px) {
-    .about img {
-        margin-left: -30px;
-    }
-}
-
 .about .animated-div {
     animation: jump 5s linear infinite;
 }
@@ -327,15 +281,8 @@ ul li {
     width: 60%;
 }
 
-@media (max-width: 560px) {
-    .about-img-1,
-    .about-img-2 {
-        width: 100%;
-    }
-    .about-img-2 {
-        left: 36%;
-    }
-}
+
+/* SERVICE */
 
 .services {
     padding-bottom: 100px;
@@ -362,7 +309,7 @@ ul li {
 .services img {
     position: relative;
     height: 200px;
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -384,12 +331,6 @@ ul li {
     padding: 100px 0 50px;
     color: #7f7f7f;
     border-bottom: 1px solid rgba(127, 127, 127, 0.2);
-}
-
-@media (max-width: 560px) {
-    .services .container {
-        padding: 0 15px;
-    }
 }
 
 .services .col-4>header {
@@ -457,7 +398,7 @@ ul li {
 
 .services .service-info p {
     min-height: 100px;
-    padding-right: 30px;
+    padding-right: 0;
 }
 
 .services .service-list {
@@ -509,6 +450,12 @@ ul li {
     top: 15px;
     left: 0;
 }
+
+
+/* SERVICES */
+
+
+/* PROVINCE */
 
 .provinces {
     background-image: url(http://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531562094/provinces_bg.png);
@@ -577,12 +524,6 @@ ul li {
     display: block;
 }
 
-@media (max-width: 560px) {
-    .provinces .province-box {
-        height: 200px;
-    }
-}
-
 .provinces .province-box:nth-of-type(even) {
     margin-left: 20px;
 }
@@ -612,6 +553,12 @@ ul li {
     display: none;
 }
 
+
+/* PROVINCE */
+
+
+/* ABOUT US */
+
 .about-us {
     padding: 100px 0;
 }
@@ -627,15 +574,6 @@ ul li {
     margin: 0 auto;
     box-shadow: 0 2px 10px 2px rgba(127, 127, 127, 0.2);
     border-radius: 5px;
-}
-
-@media (max-width: 560px) {
-    .provinces .province-box header {
-        font-size: 1.5em;
-    }
-    .about-us-container {
-        padding: 0 15px;
-    }
 }
 
 .about-us-container p {
@@ -681,6 +619,12 @@ ul li {
     border-radius: 3px;
     transform: translateX(-50%);
 }
+
+
+/* ABOUT US */
+
+
+/* contact*/
 
 .contact {
     position: relative;
@@ -764,16 +708,6 @@ ul li {
     box-shadow: 0 2px 10px 2px rgba(127, 127, 127, 0.2);
 }
 
-.info {
-    font-size: 12px;
-}
-
-@media (max-width: 560px) {
-    .contact-container {
-        padding: 0 15px;
-    }
-}
-
 .contact-container .contact-details {
     position: absolute;
     top: 50%;
@@ -783,12 +717,6 @@ ul li {
     padding: 30px 20px;
     color: #fff;
     font-size: 0.4em;
-}
-
-@media (max-width: 560px) {
-    .contact-container .contact-details {
-        display: none;
-    }
 }
 
 .contact-container .contact-details header {
@@ -839,12 +767,6 @@ ul li {
     grid-column: span 1/ -1;
 }
 
-@media (max-width: 560px) {
-    .contact-container .form {
-        padding: 20px 0;
-    }
-}
-
 .contact-container .form .input-group {
     display: block;
     width: 80%;
@@ -855,12 +777,6 @@ ul li {
     display: block;
     width: 100%;
     margin-bottom: 50px;
-}
-
-@media (max-width: 560px) {
-    .contact-container .form .input-group {
-        width: 100%;
-    }
 }
 
 .contact-container .form .input-group label {
@@ -896,12 +812,6 @@ ul li {
     width: 100%;
 }
 
-@media (max-width: 560px) {
-    .contact-container .form .input-group input {
-        width: 95%;
-    }
-}
-
 .contact-container .form .input-group textarea {
     width: 100%;
     resize: none;
@@ -918,19 +828,14 @@ ul li {
     margin: 0 auto;
 }
 
-@media (min-width: 560px) {
-    .contact-container .form button {
-        position: absolute;
-        bottom: 10%;
-        right: 19%;
-    }
-}
-
 .contact-image {
     height: 15px;
     width: 15px;
     margin-right: 5px;
 }
+
+
+/* contact */
 
 .footer {
     height: 50px;
@@ -951,100 +856,128 @@ ul li {
     width: 100%;
 }
 
-@media screen and (max-width:320px) {
-    .footer {
-        height: 40px;
-        line-height: 20px;
-        width: 100%;
-        background-color: #772E25;
-        color: #fff;
-        text-align: center;
-    }
-    .footer .foot {
-        margin: auot;
-    }
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
 }
 
-@media screen and (max-width: 530px) {
-    .contact-container .contact-details {
-        display: inline-block;
-        position: relative;
-        transform: none;
-        background-color: rgba(119, 46, 37, 0.9);
-        padding: 30px 20px;
-        color: #fff;
-        font-size: 0.7em;
-        width: 100%;
+
+/* MEDIA QUERIES START HERE */
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -160px;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
     }
-    .contact-container .contact-details span {
-        font-size: 15px;
-        font-weight: 100;
+    .about .container .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
     }
-    .contact-container .form {
-        max-width: 900px;
-        position: relative;
+    header#about {
+        display: block;
+        text-align: left;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .about header {
+        display: block;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .about-img-1 {
+        margin-left: -75px;
+    }
+    .about p {
+        width: 85%;
+        margin: auto;
+    }
+    .about-us .about-us-container {
         display: grid;
         width: 90%;
         margin: auto;
-        grid-gap: 20px;
+        text-align: center;
+    }
+    .about-us-container img#svg205 {
+        margin: auto;
+        margin-bottom: 10px;
     }
     .contact-container .form .input-row {
         display: grid !important;
         width: 100%;
         grid-template-columns: 1fr;
         grid-gap: 20px;
-        justify-items: center;
+        justify-content: start;
     }
-}
-
-@media screen and (max-width: 1050px) {
     .contact-container .contact-details {
-        display: inline-block;
-        position: relative;
-        transform: none;
-        background-color: rgba(119, 46, 37, 0.9);
-        padding: 30px 20px;
-        color: #fff;
-        font-size: 0.7em;
+        display: none;
+    }
+    .contact-container .form .input-group {
+        display: block;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
-    .contact-container .contact-details span {
-        font-size: 15px;
-        font-weight: 100;
-    }
-    .contact-container .form {
-        max-width: 900px;
-        position: relative;
-        display: grid;
-        width: 100%;
-        margin: auto;
-        grid-gap: 20px;
-    }
-    .contact-container .form .input-row {
-        display: grid !important;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        justify-items: start;
-    }
-    .contact-container .form button {
-        position: absolute;
-        bottom: 10%;
-        right: 10%;
-    }
-    .contact-container .form .input-group textarea {
-        width: 120%;
-        resize: none;
-    }
-}
-
-@media screen and (max-width: 660px) {
     .carousel {
         width: 100%;
+    }
+    .forabout {
+        display: none;
+    }
+    .footer .foot {
+        font-size: 0.8rem;
+        margin: 0;
+        line-height: 48px;
+    }
+    .services .contain {
+        width: 85%;
         margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding: 30px 0 50px;
+        color: #7f7f7f;
+        border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+    }
+    .services .service-list {
+        width: 90%;
+        margin: auto;
+        border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+        padding: 20px 0;
+    }
+    .services .service-list a:hover {
+        cursor: pointer;
     }
 }
+
+@media (min-width: 601px) {}
+
+@media screen and (max-width: 660px) {}
+
+@media (max-width: 768px) {}
+
+@media screen and (max-width: 1050px) {}
 
 
 /* .slick-dots li button:before {
