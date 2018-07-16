@@ -944,6 +944,12 @@ ul li {
         margin-bottom: 10px;
         text-align: left;
     }
+    .about a {
+        text-decoration: none;
+        color: #fff;
+        transition: transform .3s linear;
+        margin-bottom: 20px;
+    }
     .about-us .about-us-container {
         display: grid;
         width: 90%;
