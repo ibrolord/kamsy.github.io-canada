@@ -859,7 +859,21 @@ ul li {
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: -220px;
+    bottom: -200px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+#carouselExampleIndicators .forabout {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     left: 0;
     z-index: 15;
     display: flex;
@@ -877,7 +891,7 @@ ul li {
     .carousel-indicators {
         position: absolute;
         right: 0;
-        bottom: -160px;
+        bottom: 0px;
         left: 0;
         z-index: 15;
         display: flex;
