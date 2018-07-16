@@ -928,6 +928,7 @@ ul li {
         width: 85%;
         margin: auto;
         margin-bottom: 10px;
+        text-align: left;
     }
     .about-us .about-us-container {
         display: grid;
