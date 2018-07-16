@@ -891,7 +891,7 @@ ul li {
     .carousel-indicators {
         position: absolute;
         right: 0;
-        bottom: 0px;
+        bottom: -160px;
         left: 0;
         z-index: 15;
         display: flex;
@@ -907,16 +907,9 @@ ul li {
         justify-items: center;
         text-align: center;
     }
-    header#about {
-        display: block;
-        text-align: left;
-        width: 85%;
-        margin: auto;
-        margin-bottom: 10px;
-    }
     .about header {
         display: block;
-        text-align: center;
+        text-align: left;
         width: 85%;
         margin: auto;
         margin-bottom: 10px;
