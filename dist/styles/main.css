@@ -1011,8 +1011,10 @@ ul li {
     .navbar .active a {
         color: #772E25;
     }
-    .top-nav .aboutC a.active,
-    .top-nav .aboutC button {
+    .top-nav .aboutC a.active {
+        color: #772E25;
+    }
+    .top-nav .aboutC button.toggleNav {
         color: #772E25;
     }
 }
