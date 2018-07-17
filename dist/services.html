@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
@@ -18,38 +18,32 @@
     <![endif]-->
     <section class="header alt-header index-bg">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="../index.html">GIC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand active" href="../index.html">GIC</a>
+            <button onclick="toggler()" class="toggleNav">☰</button>
+            <ul id="toggleNav">
+                <li class="nav-item active">
+                    <a class="" href="../index.html">Home
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto float-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Canada</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#provinces">Provinces</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contact" id="scroll-to-contact">Contact Us</a>
-                    </li>
-
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="images/eng.png" alt="" class="nav-image"> ENG
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About Canada</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#provinces">Provinces</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-lin dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/eng.png" alt="" class="nav-image"> ENG
+                    </a>
+                </li>
+            </ul>
         </nav>
         <div class="header-container">
             <header>Our Services</header>
@@ -57,7 +51,7 @@
         <div class="pointer"></div>
     </section>
     <section class="services">
-        <div class="contain borderless">
+        <div class="container contain borderless">
             <div class="service-list" id="study-permit">
                 <header>
                     <svg viewBox="0 0 28.637 21.878" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +135,7 @@
                 </ul>
                 <p>
                     Questions
-                    <a href="index.html#contact"> Contact Us</a>
+                    <a href="../index.html#contact"> Contact Us</a>
                 </p>
             </div>
             <div class="service-list" id="temporary-resident">
@@ -180,7 +174,9 @@
                 </header>
                 <p>
                     Some foreign nationals need Canadian visas to travel to Canada while citizens of some other countries are exempt from having a visa. However, they are required to apply for an eTA before entering Canada. See link below to find out if you require a visa
-                    <a href="http://www.cic.gc.ca/english/visit/visas.asp_ga=2.256415691.1955518059.1524194465-1802654344.1502571659">here</a>
+                    <span>
+                        <a href="http://www.cic.gc.ca/english/visit/visas.asp_ga=2.256415691.1955518059.1524194465-1802654344.1502571659">here</a>
+                    </span>
                 </p>
             </div>
             <div class="service-list" id="express-entry">
@@ -223,7 +219,7 @@
                 </ul>
                 <p>
                     Questions
-                    <a href="index.html#contact"> Contact Us</a>
+                    <a href="../index.html#contact"> Contact Us</a>
                 </p>
             </div>
             <div class="service-list">
@@ -236,7 +232,7 @@
                 </p>
                 <p>
                     Questions
-                    <a href="index.html#contact"> Contact Us</a>
+                    <a href="../index.html#contact"> Contact Us</a>
                 </p>
             </div>
             <div class="service-list">
@@ -378,8 +374,7 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="foot">
-            &copy; Copyright lazylife.tech 2018. All rights reserved</p>
+        <p class="foot">&copy; Copyright lazylife.tech 2018. All rights reserved</p>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -398,6 +393,12 @@
         }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X');
         ga('send', 'pageview');
+
+
+        const toggler = () => {
+            const toggleNav = document.querySelector('#toggleNav')
+            toggleNav.classList.toggle('open');
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

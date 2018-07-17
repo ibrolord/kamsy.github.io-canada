@@ -38,74 +38,45 @@ ul li {
     margin: 0;
 }
 
+
+/* section .header {
+    display: flex;
+} */
+
 .navbar {
-    border-bottom: 1px solid #7f7f7f;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 10px;
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin: auto;
 }
 
-.navbar-expand-lg {
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.navbar-collapse {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    -ms-flex-positive: 1;
-    flex-grow: 0;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 3;
-}
-
-.navbar-light .navbar-brand {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #7f7f7f;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-}
-
-.top-nav {
-    background-color: #0A232B;
-    color: #7f7f7f;
-}
-
-.top-nav .navbar {
-    border-bottom: 0;
-}
-
-.navbar-light .navbar-toggler-icon {
-    background-image: url(../images/menu.svg);
-}
-
-.nav-item.dropdown:before {
-    content: '';
-    border-left: 1px solid #7f7f7f;
+.navbar ul {
+    display: flex;
     position: absolute;
-    left: 0;
-    top: 25%;
-    height: 50%;
-    padding: 10px 0;
+    right: 0;
+    width: 70%;
+    text-align: center;
 }
 
-.nav-image {
-    margin-right: 10px;
-    margin-top: -5px;
+.navbar li {
+    flex: 1;
+}
+
+.navbar a {
+    color: #7f7f7f;
+}
+
+.navbar a.active,
+.navbar .active a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .toggleNav {
+    display: none;
+}
+
+.top-nav .aboutC a.active,
+.top-nav .aboutC li.active {
+    color: #772E25;
 }
 
 .index-bg {
@@ -117,7 +88,7 @@ ul li {
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -848,7 +819,7 @@ ul li {
 
 .carousel {
     width: 50%;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
 }
 
 .carousel img {
@@ -888,6 +859,11 @@ ul li {
 /* MEDIA QUERIES START HERE */
 
 @media screen and (min-width:320px) and (max-width: 767px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
     .header-container header {
         font-size: 2.5rem;
     }
@@ -898,7 +874,7 @@ ul li {
         display: inline-block;
         padding: 15px 20px;
         color: #fff;
-        margin-top: 20px;
+        margin-top: 10px;
         text-decoration: none;
         transition: all .3s ease-in-out;
     }
@@ -973,10 +949,11 @@ ul li {
     .contact-container .form .input-group {
         display: block;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .carousel {
-        width: 100%;
+        width: 95%;
+        margin: 40px auto 0;
     }
     .forabout {
         display: none;
@@ -1017,9 +994,30 @@ ul li {
         border-bottom: 1px solid rgba(127, 127, 127, 0.2);
         padding: 15px 0;
     }
+    .navbar ul {
+        display: none;
+    }
+    .navbar .toggleNav {
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .navbar ul.open {
+        display: block;
+        margin-top: 100px;
+        width: 100%;
+        background: white;
+        z-index: 9999;
+    }
+    .navbar .active a {
+        color: #772E25;
+    }
+    .top-nav .aboutC a.active,
+    .top-nav .aboutC button {
+        color: #772E25;
+    }
 }
 
-@media (max-width: 768px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {}
 
 @media screen and (max-width: 1050px) {}
 

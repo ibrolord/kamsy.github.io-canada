@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
@@ -20,39 +20,33 @@
       <p class="browserupgrade">You are using an outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <section class="top-nav">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="../index.html">GIC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-light aboutC">
+            <a class="navbar-brand active" href="../index.html">GIC</a>
+            <button onclick="toggler()" class="toggleNav">☰</button>
+            <ul id="toggleNav">
+                <li class="nav-item active">
+                    <a class="active" href="../index.html">Home
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto float-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About Canada</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#provinces">Provinces</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#contact">Contact Us</a>
-                    </li>
-
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="images/eng.png" alt="" class="nav-image"> ENG
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About Canada</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#provinces">Provinces</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-lin dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/eng.png" alt="" class="nav-image"> ENG
+                    </a>
+                </li>
+            </ul>
         </nav>
     </section>
     <section class="about">
@@ -74,23 +68,6 @@
         </div>
     </section>
 
-
-    <!-- <div class="slider">
-            <div class="slider-image">
-                <img src="http://res.cloudinary.com/adexot/image/upload/v1528911989/Group_291_xagm2o.png" alt="">
-            </div>
-            <div class="slider-image">
-                <img src="http://res.cloudinary.com/adexot/image/upload/v1528911990/Group_294_vgk0md.png" alt="">
-            </div>
-            <div class="slider-image">
-                <img src="http://res.cloudinary.com/adexot/image/upload/v1528911990/Group_293_e07l6k.png" alt="">
-            </div>
-            <div class="slider-image">
-                <img src="http://res.cloudinary.com/adexot/image/upload/v1528911992/Group_286_l1mvnw.png" alt="">
-            </div>
-            <div class="slider-image"><img src="http://res.cloudinary.com/adexot/image/upload/v1528911988/Group_288_axangd.png" alt="">
-            </div>
-        </div> -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators forabout">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -107,7 +84,8 @@
             <div class="carousel-item">
                 <img src="http://res.cloudinary.com/adexot/image/upload/v1528911992/Group_286_l1mvnw.png" alt="">
             </div>
-            <div class="carousel-item"><img src="http://res.cloudinary.com/adexot/image/upload/v1528911988/Group_288_axangd.png" alt="">
+            <div class="carousel-item">
+                <img src="http://res.cloudinary.com/adexot/image/upload/v1528911988/Group_288_axangd.png" alt="">
             </div>
             <div class="carousel-item">
                 <img src="http://res.cloudinary.com/adexot/image/upload/v1528911990/Group_294_vgk0md.png" alt="">
@@ -127,8 +105,7 @@
     </div>
 
     <footer class="footer">
-        <p class="foot">
-            &copy; Copyright lazylife.tech 2018. All rights reserved</p>
+        <p class="foot">&copy; Copyright lazylife.tech 2018. All rights reserved</p>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -147,6 +124,12 @@
         }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X');
         ga('send', 'pageview');
+
+
+        const toggler = () => {
+            const toggleNav = document.querySelector('#toggleNav')
+            toggleNav.classList.toggle('open');
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
