@@ -82,7 +82,7 @@ ul li {
 
 .index-bg {
     background: linear-gradient(117deg, black 0%, #545454 100%);
-    background-image: url("http://res.cloudinary.com/adexot/image/upload/v1528911989/1_iujyky.png");
+    background-image: url("https://res.cloudinary.com/adexot/image/upload/v1528911989/1_iujyky.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -173,7 +173,7 @@ ul li {
 
 .alt-header {
     height: 500px;
-    background-image: url("http://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531603566/hero_image_3x.png");
+    background-image: url("https://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531603566/hero_image_3x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 44% center;
@@ -430,7 +430,7 @@ ul li {
 /* PROVINCE */
 
 .provinces {
-    background-image: url(http://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531562094/provinces_bg.png);
+    background-image: url(https://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531562094/provinces_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 0 100px;
