@@ -1016,6 +1016,17 @@ ul li {
     }
     .top-nav .aboutC button.toggleNav {
         color: #772E25;
+        border: none;
+        background: none;
+    }
+    .top-nav .aboutC ul.open {
+        background: #772E25;
+    }
+    .top-nav .aboutC ul.open li a {
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .top-nav .aboutC ul.open li a.active {
+        color: white;
     }
 }
 
