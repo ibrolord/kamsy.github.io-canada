@@ -14,10 +14,6 @@ a {
     cursor: pointer;
 }
 
-p {
-    line-height: 2;
-}
-
 button {
     cursor: pointer;
 }
@@ -38,10 +34,10 @@ ul li {
     margin: 0;
 }
 
-
-/* section .header {
-    display: flex;
-} */
+.footer p {
+    line-height: 50px;
+    margin: 0;
+}
 
 .navbar {
     border-bottom: 1px solid grey;
