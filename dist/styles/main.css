@@ -952,7 +952,7 @@ ul li {
         font-size: 0.8em;
         border: 0;
         margin: 0 auto;
-        position: relative;
+        position: static;
     }
     .contact-container .form .input-row {
         display: grid !important;
