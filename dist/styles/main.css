@@ -14,6 +14,11 @@ a {
     cursor: pointer;
 }
 
+.footer p {
+    line-height: 50px;
+    margin: 0;
+}
+
 button {
     cursor: pointer;
 }
@@ -34,10 +39,10 @@ ul li {
     margin: 0;
 }
 
-.footer p {
-    line-height: 50px;
-    margin: 0;
-}
+
+/* section .header {
+    display: flex;
+} */
 
 .navbar {
     border-bottom: 1px solid grey;
@@ -780,7 +785,7 @@ ul li {
 }
 
 .contact-container .form .input-group textarea {
-    width: 100%;
+    width: 130%;
     resize: none;
 }
 
@@ -792,7 +797,9 @@ ul li {
     display: inline-block;
     font-size: 0.8em;
     border: 0;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 35px;
+    right: 25%;
 }
 
 .contact-image {
