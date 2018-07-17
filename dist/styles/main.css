@@ -958,6 +958,10 @@ ul li {
         width: 95%;
         margin: 40px auto 0;
     }
+    .contact-container .form .input-group textarea {
+        width: 100%;
+        resize: none;
+    }
     .forabout {
         display: none;
     }
