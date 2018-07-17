@@ -1031,15 +1031,15 @@ ul li {
         color: white;
     }
     button.toggleNav svg {
-        width: 40px;
-        height: 40px;
-        margin-bottom: -2px;
+        width: 30px;
+        height: 30px;
+        margin-bottom: -7px;
         fill: white;
     }
     .top-nav button.toggleNav svg {
-        width: 40px;
-        height: 40px;
-        margin-bottom: -2px;
+        width: 30px;
+        height: 30px;
+        margin-bottom: -7px;
         fill: #772E25;
     }
 }
