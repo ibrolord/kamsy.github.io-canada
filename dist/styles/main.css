@@ -1010,6 +1010,16 @@ ul li {
         border: none;
         background: none;
     }
+    .contact-container .form button {
+        padding: 7px 20px;
+        border-radius: 25px;
+        background-color: #9e6c66;
+        color: #fff;
+        display: inline-block;
+        font-size: 0.8em;
+        border: 0;
+        margin: 0 auto;
+    }
     .navbar ul.open {
         display: block;
         margin-top: 100px;
