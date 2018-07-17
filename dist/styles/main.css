@@ -1023,15 +1023,6 @@ ul li {
 
 @media screen and (max-width: 1050px) {}
 
-
-/* .slick-dots li button:before {
-    content: '';
-    background-color: #772E25;
-    border-radius: 50%;
-    height: 13px;
-    width: 13px;
-} */
-
 @keyframes jump {
     0% {
         transform: translateY(0%);
