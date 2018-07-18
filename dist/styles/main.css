@@ -209,6 +209,7 @@ ul li {
 
 .about p {
     margin-top: 20px;
+    text-align: justify;
 }
 
 .about-button {
@@ -395,6 +396,7 @@ ul li {
 .services .service-list p,
 .services .service-list ul {
     max-width: 1000px;
+    text-align: justify;
 }
 
 .services .service-list a {
@@ -550,6 +552,7 @@ ul li {
 
 .about-us-container p {
     margin-top: 25px;
+    text-align: left;
 }
 
 .about-us-container img#svg205 {
@@ -725,6 +728,7 @@ ul li {
     display: grid;
     width: 100%;
     grid-gap: 20px;
+    margin: auto;
 }
 
 .contact-container .form .input-row {
@@ -894,6 +898,9 @@ ul li {
         margin-left: 15%;
         list-style: none;
     }
+    section.about#about .container .row .col-md-6 .position-relative {
+        padding-top: 0;
+    }
     .about .container .row {
         display: grid;
         grid-template-columns: 1fr;
@@ -1062,9 +1069,195 @@ ul li {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    .contact-container .form {
+        max-width: 900px;
+        position: relative;
+        display: grid;
+        width: 90%;
+        grid-gap: 20px;
+        margin: 0;
+    }
+    .contact-container .form button {
+        padding: 7px 20px;
+        border-radius: 25px;
+        background-color: #9e6c66;
+        color: #fff;
+        display: inline-block;
+        font-size: 0.8em;
+        border: 0;
+        position: absolute;
+        bottom: 35px;
+        right: 18%;
+    }
+    .contact-container .form .input-group {
+        display: block;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .contact-container .form .input-group textarea {
+        width: 130%;
+        resize: none;
+    }
+    .services .contain ul {
+        padding: 0 40px;
+    }
+    .services .contain p {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+}
 
-@media screen and (max-width: 1050px) {}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    .contact-container .form {
+        max-width: 900px;
+        position: relative;
+        display: grid;
+        width: 100%;
+        grid-gap: 20px;
+    }
+    .contact-container .form button {
+        padding: 7px 20px;
+        border-radius: 25px;
+        background-color: #9e6c66;
+        color: #fff;
+        display: inline-block;
+        font-size: 0.8em;
+        border: 0;
+        position: absolute;
+        bottom: 35px;
+        right: 19%;
+    }
+    .contact-container .form .input-row {
+        display: grid !important;
+        width: 83%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        justify-content: start;
+    }
+    .contact-container .form .input-group {
+        display: block;
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .services .contain ul {
+        padding: 0 60px;
+    }
+    .services .contain p {
+        margin-top: 20px;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 969px) and (max-width: 1102px) {
+    .navbar {
+        border-bottom: 1px solid grey;
+        width: 85%;
+        margin: auto;
+    }
+    .navbar ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: 75%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section.about#about .container .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section.about#about .container .row .col-md-6 {
+        flex: none;
+        max-width: none;
+    }
+    section.about#about .container .row .col-md-6 .position-relative {
+        padding-top: 60px;
+    }
+    section.about#about .container .row .col-md-6 .position-relative .about-img-1 {
+        width: 80%;
+    }
+    section.about#about .container .row .col-md-6 .position-relative .about-img-2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-20%, -50%);
+        width: 70%;
+    }
+    /* about page */
+    .about-us.container {
+        width: 80%;
+        margin: auto;
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1900px) {
+    .about-us.container {
+        width: 80%;
+        margin: auto;
+        padding: 50px 15px;
+    }
+    .services .contain ul {
+        padding: 0 90px;
+        margin: auto;
+    }
+    .services .contain p {
+        margin: auto;
+        margin-top: 20px;
+        padding: 0 60px;
+    }
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1440px) {
+    .about-us.container {
+        width: 80%;
+        margin: auto;
+        padding: 50px 15px;
+    }
+    .services .contain ul {
+        padding: 0 90px;
+    }
+    .services .contain p {
+        margin-top: 20px;
+        padding: 0 60px;
+    }
+}
+
+
+/* to make header responsive */
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .navbar {
+        border-bottom: 1px solid grey;
+        width: 100%;
+        margin: auto;
+    }
+    .navbar ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: 81%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 905px) and (max-width: 1010px) {
+    .navbar {
+        border-bottom: 1px solid grey;
+        width: 90%;
+        margin: auto;
+    }
+    .navbar ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: 76%;
+        text-align: center;
+    }
+}
 
 @keyframes jump {
     0% {
