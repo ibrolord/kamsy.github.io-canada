@@ -1034,6 +1034,7 @@ ul li {
         width: 100%;
         background: white;
         z-index: 9999;
+        filter: opacity(0.9);
     }
     .navbar .active a {
         color: #772E25;
@@ -1048,6 +1049,7 @@ ul li {
     }
     .top-nav .aboutC ul.open {
         background: #772E25;
+        filter: opacity(0.9);
     }
     .top-nav .aboutC ul.open li a {
         color: rgba(255, 255, 255, 0.4);
