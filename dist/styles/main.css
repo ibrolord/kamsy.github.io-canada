@@ -833,6 +833,11 @@ ul li {
     margin: 40px auto 0;
 }
 
+.carousel.abouts {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .carousel img {
     height: 300px;
     width: 100%;
@@ -852,10 +857,10 @@ ul li {
     list-style: none;
 }
 
-#carouselExampleIndicators .forabout {
+.carousel.abouts ol.carousel-indicators.forabout {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     z-index: 15;
     display: flex;
@@ -888,19 +893,6 @@ ul li {
         margin-top: 10px;
         text-decoration: none;
         transition: all .3s ease-in-out;
-    }
-    .carousel-indicators {
-        position: absolute;
-        right: 0;
-        bottom: -40px;
-        left: 0;
-        z-index: 15;
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        margin-right: 15%;
-        margin-left: 15%;
-        list-style: none;
     }
     section.about#about .container .row .col-md-6 .position-relative {
         padding-top: 0;
@@ -984,8 +976,35 @@ ul li {
         width: 95%;
         margin: 40px auto 0;
     }
-    .forabout {
-        display: none;
+    .carousel.abouts {
+        width: 100%;
+        margin: 0;
+    }
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+    }
+    .carousel.abouts ol.carousel-indicators.forabout {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
     }
     .footer .foot {
         font-size: 0.8rem;
