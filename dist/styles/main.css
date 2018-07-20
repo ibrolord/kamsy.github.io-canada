@@ -78,7 +78,7 @@ ul li {
 .navbar a:hover {
     color: #772E25;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -90,17 +90,10 @@ ul li {
 .navbar a.active:hover,
 .navbar .active a:hover {
     color: #772E25;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .navbar .toggleNav {
     display: none;
-}
-
-.top-nav .aboutC a.active,
-.top-nav .aboutC li.active {
-    color: #772E25;
 }
 
 .top-nav .aboutC a {
@@ -109,13 +102,11 @@ ul li {
 
 .alt-header .navbar a:hover {
     color: white;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .alt-header .navbar a.active:hover {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
