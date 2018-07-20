@@ -540,7 +540,20 @@ ul li {
     text-align: left;
 }
 
-.provinces .province-box:hover:after {
+.provinces .province-box:after {
+    content: '';
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.provinces .province-box:hover p:after {
     content: '';
     display: block;
     top: 20px;
@@ -550,7 +563,7 @@ ul li {
     position: absolute;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.2);
-    z-index: 4;
+    z-index: 2;
 }
 
 .provinces .province-box:hover p {
