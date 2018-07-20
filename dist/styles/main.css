@@ -1089,7 +1089,7 @@ hr {
     }
     .carousel.abouts {
         width: 100%;
-        margin: 0 0 75px;
+        margin: 0;
         height: 40vh;
     }
     .carousel.abouts ol.carousel-indicators.forabout {
@@ -1254,6 +1254,7 @@ hr {
         background-color: #772E25;
         color: #fff;
         text-align: center;
+        margin: 70px 0 0;
     }
     .footer .foot {
         text-align: left;
