@@ -1017,7 +1017,7 @@ hr {
         width: 85%;
         margin: 10px auto;
     }
-    .about-us header:after {
+    .about-us.container header:after {
         content: '';
         position: absolute;
         bottom: -5px;
