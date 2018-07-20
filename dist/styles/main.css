@@ -1576,7 +1576,7 @@ ul li {
 @media screen and (max-width: 425px) {
     .services img {
         position: relative;
-        height: 340px;
+        height: 400px;
         width: 100%;
         border-radius: 5px;
     }
