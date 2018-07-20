@@ -39,11 +39,6 @@ ul li {
     margin: 0;
 }
 
-
-/* section .header {
-    display: flex;
-} */
-
 .overlay {
     display: none;
 }
@@ -52,6 +47,14 @@ ul li {
     border-bottom: 1px solid grey;
     width: 80%;
     margin: auto;
+    z-index: 5;
+}
+
+.header.alt-header.index-bg .navbar {
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: auto;
+    z-index: 5;
 }
 
 .navbar ul {
@@ -60,6 +63,7 @@ ul li {
     right: 0;
     width: 70%;
     text-align: center;
+    text-decoration: none;
 }
 
 .navbar li {
@@ -67,12 +71,27 @@ ul li {
 }
 
 .navbar a {
-    color: #7f7f7f;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #772E25;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .navbar a.active,
 .navbar .active a {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.navbar a.active:hover,
+.navbar .active a:hover {
+    color: #772E25;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .navbar .toggleNav {
@@ -82,6 +101,22 @@ ul li {
 .top-nav .aboutC a.active,
 .top-nav .aboutC li.active {
     color: #772E25;
+}
+
+.top-nav .aboutC a {
+    color: #7f7f7f;
+}
+
+.alt-header .navbar a:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.alt-header .navbar a.active:hover {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .index-bg {
@@ -107,6 +142,7 @@ ul li {
     text-align: center;
     color: #fff;
     letter-spacing: 0.5rem;
+    z-index: 5;
 }
 
 .header-container header {
@@ -161,6 +197,7 @@ ul li {
     background-color: #fff;
     border-radius: 15px;
     transform: translate(-50%, 75%) rotate(45deg) scale(1.5);
+    z-index: 5;
 }
 
 .header .pointer:after {
@@ -177,10 +214,23 @@ ul li {
 
 .alt-header {
     height: 500px;
-    background-image: url("https://res.cloudinary.com/eze-mmuo/image/upload/q_auto:good/v1531603566/hero_image_3x.png");
+    background-image: url("https://res.cloudinary.com/eze-mmuo/image/upload/q_auto:eco/v1532084339/logan-isbell-672551-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 44% center;
+    background-position: center center;
+}
+
+.alt-header:after {
+    content: '';
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
 }
 
 .alt-header .design {
@@ -285,8 +335,8 @@ ul li {
 
 .services img {
     position: relative;
-    height: 200px;
-    width: 100%;
+    height: 300px;
+    width: 70%;
     border-radius: 5px;
 }
 
@@ -494,7 +544,7 @@ ul li {
     bottom: 20px;
     position: absolute;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.27);
     z-index: 2;
 }
 
@@ -1094,6 +1144,13 @@ ul li {
         background: rgba(0, 0, 0, 0.5);
         border: none;
     }
+    .header.alt-header.index-bg .navbar {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+    }
     .overlay {
         position: fixed;
         background: #772E25;
@@ -1121,6 +1178,12 @@ ul li {
         height: 210px;
         align-items: flex-start;
         padding-left: 40px;
+    }
+    .services img {
+        position: relative;
+        height: 300px;
+        width: 50%;
+        border-radius: 5px;
     }
 }
 
@@ -1160,6 +1223,12 @@ ul li {
     .services .contain p {
         margin-top: 20px;
         padding: 0 20px;
+    }
+    .services img {
+        position: relative;
+        height: 270px;
+        width: 100%;
+        border-radius: 5px;
     }
 }
 
@@ -1202,6 +1271,12 @@ ul li {
         margin-top: 20px;
         padding: 0 30px;
     }
+    .services img {
+        position: relative;
+        height: 300px;
+        width: 80%;
+        border-radius: 5px;
+    }
 }
 
 @media screen and (min-width: 969px) and (max-width: 1102px) {
@@ -1216,6 +1291,11 @@ ul li {
         right: 0;
         width: 75%;
         text-align: center;
+    }
+    .header.alt-header.index-bg .navbar {
+        border-bottom: 1px solid white;
+        width: 85%;
+        margin: auto;
     }
 }
 
@@ -1290,6 +1370,12 @@ ul li {
         width: 88%;
         margin: auto;
     }
+    .header.alt-header.index-bg .navbar {
+        border-bottom: 1px solid white;
+        width: 88%;
+        margin: auto;
+        z-index: 5;
+    }
     .navbar ul {
         display: flex;
         position: absolute;
@@ -1304,6 +1390,12 @@ ul li {
         border-bottom: 1px solid grey;
         width: 80%;
         margin: auto;
+    }
+    .header.alt-header.index-bg .navbar {
+        border-bottom: 1px solid white;
+        width: 80%;
+        margin: auto;
+        z-index: 5;
     }
     .navbar ul {
         display: flex;
@@ -1337,6 +1429,46 @@ ul li {
     .carousel {
         width: 50%;
         margin: 20px auto 0;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    /* province */
+    .provinces .container .province-box button.hover-fix {
+        width: 30px;
+        height: 30px;
+        background: white;
+        z-index: 20;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .provinces .container .province-box button.hover-fix span {
+        color: #772E25;
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .provinces .container .province-box button.hover-fix.cloak {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .services img {
+        position: relative;
+        height: 300px;
+        width: 60%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .services img {
+        position: relative;
+        height: 340px;
+        width: 100%;
+        border-radius: 5px;
     }
 }
 
