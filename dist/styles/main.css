@@ -1131,12 +1131,13 @@ ul li {
     .navbar .active a {
         color: white;
     }
-    .overlay .navbar.aboutC a.active {
+    .top-nav .overlay .navbar.aboutC a.active {
         color: white;
     }
     .top-nav .aboutC a.active {
         color: #772E25;
     }
+    .top-nav .aboutC .active a,
     .top-nav .aboutC a {
         color: white;
     }
