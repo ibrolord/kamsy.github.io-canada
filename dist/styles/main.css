@@ -910,7 +910,7 @@ ul li {
 .carousel.abouts ol.carousel-indicators.forabout {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 50px;
     left: 0;
     z-index: 15;
     display: flex;
