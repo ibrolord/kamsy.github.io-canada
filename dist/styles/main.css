@@ -103,7 +103,7 @@ ul li {
 }
 
 .top-nav .navbar.aboutC a.navbar-brand.active {
-    color: #772E25;
+    color: white;
 }
 
 .top-nav .aboutC .active a {
@@ -1003,10 +1003,20 @@ ul li {
     }
     .about header {
         display: block;
-        text-align: center;
+        text-align: left;
         width: 85%;
-        margin: auto;
-        margin-bottom: 10px;
+        margin: 10px auto;
+    }
+    .about-us header:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 14px;
+        width: 30px;
+        height: 2px;
+        background-color: #9e6c66;
+        border-radius: 3px;
+        transform: translateX(-50%);
     }
     .about-img-1 {
         margin-left: -75px;
@@ -1069,7 +1079,7 @@ ul li {
     }
     .carousel.abouts {
         width: 100%;
-        margin: 0;
+        margin: 0 0 75px;
         height: 40vh;
     }
     .carousel.abouts ol.carousel-indicators.forabout {
@@ -1147,9 +1157,6 @@ ul li {
     .top-nav .overlay .navbar.aboutC a.active {
         color: white;
     }
-    .top-nav .aboutC a.active {
-        color: #772E25;
-    }
     .top-nav .aboutC .active a,
     .top-nav .aboutC a {
         color: white;
@@ -1172,7 +1179,7 @@ ul li {
         width: 30px;
         height: 30px;
         margin-bottom: -7px;
-        fill: #772E25;
+        fill: white;
     }
     .overlay button.toggleNav svg {
         width: 20px;
