@@ -1254,6 +1254,14 @@ hr {
         background-color: #772E25;
         color: #fff;
         text-align: center;
+    }
+    .footer.about {
+        height: auto;
+        line-height: 50px;
+        width: 100%;
+        background-color: #772E25;
+        color: #fff;
+        text-align: center;
         margin: 70px 0 0;
     }
     .footer .foot {
