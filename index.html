@@ -593,22 +593,6 @@
         navItems.forEach(navItem => navItem.addEventListener('click', close))
 
         cross.addEventListener('click', close)
-
-        // the provinces code
-        // const prov = document.querySelector('#provinces')
-        const fixSelects = document.querySelectorAll('.hover-fix')
-            // const hoverFixs = document.querySelectorAll('button.hover-fix')
-            // for (let i = 0; i < hoverFixs.length; i++) {
-            //     const cloaker = () => {
-            //         hoverFixs[i].classList.toggle("cloak");
-            //     }
-
-        // }
-        // const cloaker = () => {
-        //     hoverFixs[3].classList.toggle("cloak");
-        // }
-        // prov.addEventListener('click', () => fixSelect.classList.remove("cloak"))
-        fixSelects.forEach(fixSelect => fixSelect.addEventListener('click', () => fixSelect.classList.toggle("cloak")))
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

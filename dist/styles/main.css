@@ -549,7 +549,7 @@ ul li {
     bottom: 0px;
     position: absolute;
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(119, 46, 37, 0.5);
     z-index: 2;
 }
 
@@ -1238,6 +1238,10 @@ ul li {
         color: #fff;
         text-align: center;
     }
+    .footer .foot {
+        text-align: left;
+        padding-left: 25px;
+    }
     .footer .contact-details {
         display: block;
         text-align: left;
@@ -1255,10 +1259,11 @@ ul li {
     }
     .footer .contact-details ul p {
         display: inline;
+        font-size: 13px;
     }
     .footer .contact-details h5 {
         margin: 0;
-        padding: 10px;
+        padding: 20px 0 0 25px;
     }
 }
 
