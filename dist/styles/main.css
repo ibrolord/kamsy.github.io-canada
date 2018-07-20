@@ -884,8 +884,9 @@ ul li {
 }
 
 .carousel.abouts {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+    height: 60vh;
 }
 
 .carousel img {
@@ -910,7 +911,7 @@ ul li {
 .carousel.abouts ol.carousel-indicators.forabout {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 20px;
     left: 0;
     z-index: 15;
     display: flex;
@@ -919,6 +920,18 @@ ul li {
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
+}
+
+.carousel.abouts .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel.abouts .carousel-inner .carousel-item img {
+    height: 60vh;
+    width: 100%;
 }
 
 
@@ -1029,24 +1042,12 @@ ul li {
     .carousel.abouts {
         width: 100%;
         margin: 0;
-    }
-    .carousel-indicators {
-        position: absolute;
-        right: 0;
-        bottom: -40px;
-        left: 0;
-        z-index: 15;
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        margin-right: 15%;
-        margin-left: 15%;
-        list-style: none;
+        height: 40vh;
     }
     .carousel.abouts ol.carousel-indicators.forabout {
         position: absolute;
         right: 0;
-        bottom: 50px;
+        bottom: 20px;
         left: 0;
         z-index: 15;
         display: flex;
@@ -1056,6 +1057,17 @@ ul li {
         margin-left: 15%;
         list-style: none;
     }
+    .carousel.abouts .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .carousel.abouts .carousel-inner .carousel-item img {
+        height: 40vh;
+        width: 100%;
+    }
+    /* footer */
     .footer .foot {
         font-size: 0.8rem;
         margin: 0;
@@ -1109,6 +1121,9 @@ ul li {
     }
     .top-nav .aboutC a.active {
         color: #772E25;
+    }
+    .top-nav .aboutC a {
+        color: white;
     }
     .navbar a {
         color: white;
@@ -1229,6 +1244,35 @@ ul li {
         height: 270px;
         width: 100%;
         border-radius: 5px;
+    }
+    /* .carousel */
+    .carousel.abouts {
+        width: 100%;
+        margin: 0;
+        height: 50vh;
+    }
+    .carousel.abouts ol.carousel-indicators.forabout {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+    }
+    .carousel.abouts .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .carousel.abouts .carousel-inner .carousel-item img {
+        height: 50vh;
+        width: 100%;
     }
 }
 
