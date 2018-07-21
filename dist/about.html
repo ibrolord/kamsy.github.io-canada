@@ -18,7 +18,7 @@
     <![endif]-->
     <section class="top-nav">
         <nav class="navbar navbar-expand-lg navbar-light aboutC">
-            <a class="navbar-brand active" href="../index.html">GIC</a>
+            <a class="navbar-brand active" href="index.html">GIC</a>
             <button class="toggleNav">
                 <?xml version='1.0' encoding='utf-8'?>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
@@ -36,7 +36,7 @@
             </button>
             <ul id="toggleNav">
                 <li class="nav-item">
-                    <a class="active" href="../index.html">Home
+                    <a class="active" href="index.html">Home
 
                     </a>
                 </li>
@@ -47,17 +47,17 @@
                     <a href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#provinces">Provinces</a>
+                    <a href="index.html#provinces">Provinces</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#contact">Contact Us</a>
+                    <a href="index.html#contact">Contact Us</a>
                 </li>
 
             </ul>
         </nav>
         <div class="overlay">
             <nav class="navbar navbar-expand-lg navbar-light aboutC">
-                <a class="navbar-brand active " href="../index.html ">GIC</a>
+                <a class="navbar-brand active " href="index.html ">GIC</a>
                 <button class="toggleNav cross">
                     <?xml version='1.0' encoding='utf-8'?>
                     <?xml version="1.0 " encoding="iso-8859-1 "?>
@@ -102,7 +102,7 @@
                 </button>
                 <ul id="toggleNav">
                     <li class="nav-item">
-                        <a class=" " href="../index.html">Home
+                        <a class=" " href="index.html">Home
 
                         </a>
                     </li>
@@ -113,10 +113,10 @@
                         <a href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../index.html#provinces">Provinces</a>
+                        <a href="index.html#provinces">Provinces</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../index.html#contact">Contact Us</a>
+                        <a href="index.html#contact">Contact Us</a>
                     </li>
 
                 </ul>
@@ -207,67 +207,68 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    </div>
 
-        <footer class="footer about">
-            <div class="contact-details">
-                <h5>Contact Information</h5>
-                <ul>
-                    <li>
-                        <img src="images/mail.svg" alt="" class="contact-image">
-                        <p>info@charles.co.za</p>
-                    </li>
-                    <li>
-                        <img src="images/phone.svg" alt="" class="contact-image">
-                        <p>+1()745 466-1000</p>
-                    </li>
-                    <li>
-                        <img src="images/pin.svg" alt="" class="contact-image">
-                        <p>43 Lorem Ipsum Street, Canada</p>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <p class="foot">&copy; Copyright lazylife.tech 2018. All rights reserved</p>
-        </footer>
+    <footer class="footer about">
+        <div class="contact-details">
+            <h5>Contact Information</h5>
+            <ul>
+                <li>
+                    <img src="images/mail.svg" alt="" class="contact-image">
+                    <p>info@charles.co.za</p>
+                </li>
+                <li>
+                    <img src="images/phone.svg" alt="" class="contact-image">
+                    <p>+1()745 466-1000</p>
+                </li>
+                <li>
+                    <img src="images/pin.svg" alt="" class="contact-image">
+                    <p>43 Lorem Ipsum Street, Canada</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <p class="foot">&copy; Copyright lazylife.tech 2018. All rights reserved</p>
+    </footer>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                    function() {
-                        (b[l].q = b[l].q || []).push(arguments)
-                    });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = 'https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-XXXXX-X');
-            ga('send', 'pageview');
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
 
-            //overlay
-            const overlay = document.querySelector('.overlay')
-            const btn = document.querySelector('.toggleNav');
-            const navItems = document.querySelectorAll('.nav-item')
-            const cross = document.querySelector('.cross')
-            const handleClick = (e) => {
-                overlay.classList.add('open');
-            }
-            const close = () => {
-                overlay.classList.remove('open');
-            }
-            btn.addEventListener('click', handleClick)
-            navItems.forEach(navItem => navItem.addEventListener('click', close))
+        //overlay
+        const overlay = document.querySelector('.overlay')
+        const btn = document.querySelector('.toggleNav');
+        const navItems = document.querySelectorAll('.nav-item')
+        const cross = document.querySelector('.cross')
+        const handleClick = (e) => {
+            overlay.classList.add('open');
+        }
+        const close = () => {
+            overlay.classList.remove('open');
+        }
+        btn.addEventListener('click', handleClick)
+        navItems.forEach(navItem => navItem.addEventListener('click', close))
 
-            cross.addEventListener('click', close)
-        </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+        cross.addEventListener('click', close)
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js "></script>
-        <script src="scripts/main.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js "></script>
+    <script src="scripts/main.js "></script>
 
 </body>
 

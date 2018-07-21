@@ -107,7 +107,7 @@ hr {
 }
 
 .top-nav .navbar.aboutC a.navbar-brand.active {
-    color: white;
+    color: #772E25;
 }
 
 .top-nav .aboutC .active a {
@@ -272,7 +272,7 @@ hr {
 
 .about p {
     margin-top: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 .about-button {
@@ -907,6 +907,10 @@ hr {
     display: none;
 }
 
+.footer.about p {
+    margin-top: 0;
+}
+
 
 /* footer */
 
@@ -970,6 +974,9 @@ hr {
 /* MEDIA QUERIES START HERE */
 
 @media screen and (min-width:320px) and (max-width: 767px) {
+    .top-nav .navbar.aboutC a.navbar-brand.active {
+        color: white;
+    }
     hr {
         display: block;
         background: rgba(255, 255, 255, 0.3);
@@ -1267,6 +1274,7 @@ hr {
     .footer .foot {
         text-align: left;
         padding-left: 25px;
+        width: 100%;
     }
     .footer .contact-details {
         display: block;
@@ -1610,6 +1618,13 @@ hr {
         height: 400px;
         width: 100%;
         border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .footer.about p {
+        margin-top: 0;
+        text-align: center;
     }
 }
 
