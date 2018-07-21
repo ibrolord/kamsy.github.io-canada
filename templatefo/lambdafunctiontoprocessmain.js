@@ -1,9 +1,9 @@
 var AWS = require('aws-sdk');
 var ses = new AWS.SES();
  
-var RECEIVER = 'ibroniagara@gmail.com';
-var SENDER = 'ibroniagara@gmail.com';
-var client_response = "Thanks Bitch";
+var RECEIVER = 'charles@goshenconsulting.ca';
+var SENDER = 'charles@goshenconsulting.ca';
+var client_response = "Thank you for reaching out to us.";
 var clientEmail;
 var response = {
  "isBase64Encoded": false,
