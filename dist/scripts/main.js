@@ -60,7 +60,7 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
 
 function submitToAPI(e) {
     e.preventDefault();
-    var URL = "https://1vysweipzg.execute-api.us-east-1.amazonaws.com/prod/contact-us";
+    var URL = "https://41phvoy553.execute-api.us-east-1.amazonaws.com/prod/goshenconsulting-ca-function-api";
 
     var Namere = /[A-Za-z]{1}[A-Za-z]/;
     if (!Namere.test($("#name").val())) {
@@ -96,7 +96,7 @@ function submitToAPI(e) {
 
     $.ajax({
         type: "POST",
-        url: "https://1vysweipzg.execute-api.us-east-1.amazonaws.com/prod/contact-us",
+        url: "https://41phvoy553.execute-api.us-east-1.amazonaws.com/prod/goshenconsulting-ca-function-api",
         dataType: "json",
         crossDomain: "true",
         contentType: "application/json; charset=utf-8",
