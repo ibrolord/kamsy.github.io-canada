@@ -1,56 +1,94 @@
-'use strict';
-console.log('Loading function');
-const AWS = require('aws-sdk');
-const sesClient = new AWS.SES();
-const sesConfirmedAddress = "ibroniagara@gmail.com";
+var AWS = require('aws-sdk');
+// const cors = require("cors")({origin:true});
+var ses = new AWS.SES();
+ 
 
-/**
- * Lambda to process HTTP POST for contact form with the following body
- * {
-      "email": <contact-email>,
-      "subject": <contact-subject>,
-      "message": <contact-message>
-    }
- *
- */
+var RECEIVER = 'cahanonu@goshenconsulting.ca';
+var SENDER = 'cahanonu@goshenconsulting.ca';
+var client_response = `
+   <pre> Thank you for reaching out to us. We have received your message and we will respond within two
+business days. In the mean time, you can check the <a href="https://www.goshenconsulting.ca/FAQs">FAQ section</a> for general inquiries.
+
+Regards,
+Goshen Team</pre>`;
+
+var clientEmail = "event.email";
+
+// var response = 
+//   {
+//       statusCode:200,
+//     "headers": {
+//         "Access-Control-Allow-Origin" : "https://goshenconsulting.ca"},
+//         "body":"done",
+//     "method": ["POST"],
+//   }
+// ;
+
+
+
 exports.handler = (event, context, callback) => {
-    console.log('Received event:', JSON.stringify(event, null, 2));
-    var emailObj = JSON.parse(event.body);
-    var params = getEmailMessage(emailObj);
-    var sendEmailPromise = sesClient.sendEmail(params).promise();
-    
-    var response = {
-        statusCode: 200
-    };
-    
-    sendEmailPromise.then(function(result) {
-        console.log(result);
-        callback(null, response);
-    }).catch(function(err) {
-        console.log(err);
-        response.statusCode = 500;
-        callback(null, response);
+    console.log('Received event:', event);
+    sendEmail(event, function (err, data) {
+        var response = {
+            "isBase64Encoded": false,
+            "headers": { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'https://www.goshenconsulting.ca' },
+            "statusCode": 200,
+            "body": "{\"result\": \"Success.\"}"
+        };
+        callback(err, response);
     });
 };
 
-function getEmailMessage (emailObj) {
-    var emailRequestParams = {
+// 1. send to Charles
+function sendEmail (event, done) {
+
+    var params = {
         Destination: {
-          ToAddresses: [ sesConfirmedAddress ]  
+            ToAddresses: [
+                RECEIVER
+            ]
         },
         Message: {
             Body: {
                 Text: {
-                    Data: emailObj.message
+                    Data: 'name: ' + event.name +  '\nemail: ' + event.email + '\ndesc: ' + event.desc,
+                    Charset: 'UTF-8'
                 }
             },
             Subject: {
-                Data: emailObj.subject
+                Data: 'Website Referral Form: ' + event.name,
+                Charset: 'UTF-8'
             }
         },
-        Source: sesConfirmedAddress,
-        ReplyToAddresses: [ emailObj.email ]
+        Source: SENDER
+    };
+    var params2 = {
+        Destination: {
+            ToAddresses: [
+                event.email
+            ]
+        },
+        Message: {
+            Body: {
+                Html: {
+                    Data: client_response,
+                    Charset: 'UTF-8'
+                }
+            },
+            Subject: {
+                Data: 'Submition Received: Thank You',
+                Charset: 'UTF-8'
+            }
+        },
+        Source: SENDER
     };
     
-    return emailRequestParams;
+    var prom = new Promise((resolve, reject)=>{
+            ses.sendEmail(params, done);
+            ses.sendEmail(params2, done); 
+            
+            resolve();
+    })
+    
+    
 }
